@@ -1,0 +1,19 @@
+<div class="container">
+<h2 translate>Title</h2>
+
+<div class="row">
+
+    <div class="col sm-6" *ngFor=" let hotel of hotels ">
+    <div class="card" style="width: 20rem;">
+  <img class="card-img-top" height="150" src="https://i.pinimg.com/originals/7b/3e/14/7b3e14f447a22ccf162f7b4c9f328119.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{hotel.name}}</h5>
+  <p>  <label translate>Price  </label><span class="card-text" > {{hotel.price}}</span></p>
+    <a [routerLink]="['/',lang,'hotel', hotel.id ]"class="btn btn-primary" translate>Detail</a>
+
+  </div>
+</div>
+</div>
+
+</div>
+</div>
